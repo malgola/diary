@@ -1,0 +1,9 @@
+<div>
+  <h1>Entries</h1>
+  <ul>
+    <% for entry in @entries %>
+      <%= render partial: "entry",  locals: {entry: entry} %>
+    <% end %>
+    <%= link_to("New entry", new_entry_path) %>
+</ul>
+</div>
